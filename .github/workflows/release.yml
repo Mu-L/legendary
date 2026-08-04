@@ -11,6 +11,9 @@ jobs:
   pypi:
     runs-on: ubuntu-latest
     environment: pypi
+    permissions:
+      contents: read
+      id-token: write
     env:
       UV_SYSTEM_PYTHON: 1
     steps:
